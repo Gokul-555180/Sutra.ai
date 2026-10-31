@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sutraGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <linearGradient id="aiBadgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <g transform="translate(10, 14)">
+    <!-- Sutra Emblem Mark: The Woven Thread Aperture -->
+    <g transform="translate(10, 0)">
+      <!-- Outer Aperture Diamond / Octagon Frame -->
+      <path d="M 36 2 L 66 36 L 36 70 L 6 36 Z" fill="none" stroke="#222B3D" stroke-width="2" />
+      <path d="M 36 10 L 60 36 L 36 62 L 12 36 Z" fill="none" stroke="#1B2232" stroke-width="1.5" stroke-dasharray="3 3" />
+      
+      <!-- The Continuous Intelligent Thread (S-Curve Weave) -->
+      <path d="M 10 50 C 18 64, 42 66, 50 48 C 56 34, 46 16, 26 24 C 12 30, 18 52, 36 58 C 50 62, 62 46, 58 32"
+            fill="none"
+            stroke="url(#sutraGlow)"
+            stroke-width="3.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            filter="url(#subtleGlow)" />
+            
+      <!-- Pulse Core Nodes along the Thread -->
+      <circle cx="10" cy="50" r="3" fill="#06B6D4" />
+      <circle cx="36" cy="36" r="3.5" fill="#FFFFFF" />
+      <circle cx="58" cy="32" r="2.5" fill="#8B5CF6" />
+    </g>
+
+    <!-- Typography: SUTRA -->
+    <text x="100" y="49"
+          font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif"
+          font-size="40"
+          font-weight="800"
+          letter-spacing="4"
+          fill="#F5F7FA">SUTRA</text>
+
+    <!-- Badge: .ai -->
+    <g transform="translate(310, 16)">
+      <rect x="0" y="0" width="68" height="42" rx="8"
+            fill="url(#aiBadgeGrad)"
+            stroke="#06B6D4"
+            stroke-opacity="0.6"
+            stroke-width="1.5" />
+      <text x="34" y="27"
+            font-family="'JetBrains Mono', 'Fira Code', monospace"
+            font-size="20"
+            font-weight="700"
+            letter-spacing="0.5"
+            fill="#38BDF8"
+            text-anchor="middle">.ai</text>
+    </g>
+  </g>
+</svg>
