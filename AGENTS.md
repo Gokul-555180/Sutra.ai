@@ -20,6 +20,7 @@ You are not an impulsive code generator that dumps boilerplate into arbitrary fi
 Every agent operating on SUTRA.ai must strictly adhere to these immutable rules:
 
 ### 2.1 Codebase Inspection & Verification
+* **Authoritative Documentation Hierarchy:** Always read [ARCHITECTURE.md](ARCHITECTURE.md) and [docs/INDEX.md](docs/INDEX.md) before implementing features. For specific feature rules, inspect [docs/product/FEATURE_SPECIFICATIONS.md](docs/product/FEATURE_SPECIFICATIONS.md) and [docs/technical/API_DESIGN.md](docs/technical/API_DESIGN.md).
 * **Never assume; always verify.** Before creating, editing, or referencing any function, component, table, or dependency, inspect the filesystem and confirm its existence, signature, and active usage.
 * **Respect existing patterns.** Preserve existing utilities, patterns, and conventions. Never introduce competing libraries or duplicate utilities when an established solution exists in the project.
 * **No silent degradation.** Never delete, overwrite, or stub out working functionality to make a new feature fit. If refactoring is necessary, provide a comprehensive plan and preserve all functional behaviors.

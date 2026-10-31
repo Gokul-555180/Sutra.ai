@@ -6,6 +6,7 @@
 > **Tagline:** *"Where thoughts become instructions."*  
 > **Target Platform:** Desktop (Windows, macOS, Linux)  
 > **Core Framework:** Tauri 2 (Rust) + React 18+ (TypeScript) + Vite  
+> **Documentation Map:** [Master Index](docs/INDEX.md) • [Tech Stack](docs/technical/TECH_STACK.md) • [AI System Design](docs/technical/AI_SYSTEM_DESIGN.md) • [Database Schema](docs/technical/DATABASE_DESIGN.md) • [API Design](docs/technical/API_DESIGN.md) • [Security Design](docs/technical/SECURITY_DESIGN.md)  
 
 ---
 

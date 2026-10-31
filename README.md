@@ -23,7 +23,7 @@
 [![SQLite](https://img.shields.io/badge/SQLite-Local_Storage-003B57?logo=sqlite&logoColor=white)](https://www.sqlite.org/)
 [![Development Status](https://img.shields.io/badge/Status-Under_Active_Development-yellow)](#project-status--roadmap)
 
-[Architecture Specification](ARCHITECTURE.md) • [Agent & Developer Guidelines](AGENTS.md) • [Feature Modules](#core-modules) • [Roadmap](#project-status--roadmap)
+[Documentation Portal](docs/INDEX.md) • [Architecture Specification](ARCHITECTURE.md) • [Agent Guidelines](AGENTS.md) • [Contributing](CONTRIBUTING.md) • [Security](SECURITY.md) • [Changelog](CHANGELOG.md)
 
 </div>
 
@@ -233,17 +233,17 @@ SUTRA.ai is structured into nine progressive, verifiable phases:
 Contributions are welcome from prompt engineers, desktop developers, and AI researchers.
 
 To ensure consistency and quality:
-1. Review [ARCHITECTURE.md](ARCHITECTURE.md) to understand the system design and layer boundaries.
-2. Follow all guidelines in [AGENTS.md](AGENTS.md) regarding strict TypeScript typing, design aesthetics, security rules, and testing standards.
-3. Open an issue on GitHub to discuss proposed architecture changes before submitting large PRs.
+1. Review our master [Documentation Portal](docs/INDEX.md) and [ARCHITECTURE.md](ARCHITECTURE.md) to understand system boundaries.
+2. Review our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) for branch workflows and commit conventions.
+3. Follow all guidelines in [AGENTS.md](AGENTS.md) regarding strict TypeScript typing, design aesthetics, security rules, and testing standards.
+4. Open an issue on GitHub to discuss proposed architecture changes before submitting large PRs.
 
 ---
 
-## 9. Issue Reporting & Support
+## 9. Issue Reporting & Security
 
-If you encounter a bug, have an architectural suggestion, or want to propose a new prompt optimization mode:
-* Open an issue at [GitHub Issues](https://github.com/Gokul-555180/Sutra.ai/issues).
-* Provide detailed reproduction steps, target OS information, and relevant logs.
+* **Bug Reports & Features:** Submit reports via [GitHub Issues](https://github.com/Gokul-555180/Sutra.ai/issues) using our [Issue Templates](.github/ISSUE_TEMPLATE/).
+* **Security Advisories:** If you discover a vulnerability, please consult our [Security Policy](SECURITY.md) for private reporting procedures. Do not post security exploits in public issues.
 
 ---
 
