@@ -1,10 +1,6 @@
 <div align="center">
 
-<br />
-
-<img src="docs/assets/readme/sutra-logo.svg" alt="SUTRA.ai Logo" width="460" />
-
-<br />
+<img src="docs/assets/readme/sutra-hero.svg" alt="SUTRA.ai" width="100%" />
 
 ### *"Where thoughts become instructions."*
 
@@ -21,13 +17,6 @@
 <br />
 
 [Architecture](ARCHITECTURE.md) • [Features](docs/product/FEATURE_SPECIFICATIONS.md) • [Roadmap](docs/product/ROADMAP.md) • [Documentation](docs/INDEX.md) • [Contributing](CONTRIBUTING.md)
-
-<br />
-
-<picture>
-  <source srcset="docs/assets/readme/sutra-hero.svg" type="image/svg+xml">
-  <img src="docs/assets/readme/sutra-hero.gif" alt="SUTRA.ai — The Intelligent Thread: Scattered Thoughts to Structured Instructions" width="100%" />
-</picture>
 
 </div>
 

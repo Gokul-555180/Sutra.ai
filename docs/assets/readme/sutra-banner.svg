@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1600"
+     height="420"
+     viewBox="0 0 1600 420">
+
+  <defs>
+    <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff0d5"/>
+      <stop offset="55%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#d9caff"/>
+    </linearGradient>
+
+    <linearGradient id="aiGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff82e5"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#647cff"/>
+    </linearGradient>
+
+    <linearGradient id="orbitGradient">
+      <stop offset="0%" stop-color="#d946ef"/>
+      <stop offset="50%" stop-color="#8055ff"/>
+      <stop offset="100%" stop-color="#32aaff"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+
+    <clipPath id="logoClip">
+      <text x="800" y="235"
+            text-anchor="middle"
+            font-family="monospace"
+            font-size="190"
+            font-weight="900"
+            letter-spacing="-12">SUTRA</text>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="420" fill="#080a13"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="800" cy="200"
+           rx="420" ry="130"
+           fill="#7040ff"
+           opacity=".08"
+           filter="url(#softGlow)">
+    <animate attributeName="opacity"
+             values=".04;.13;.04"
+             dur="5s"
+             repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Stars -->
+  <g fill="#a879ff">
+
+    <circle cx="260" cy="100" r="3">
+      <animate attributeName="opacity"
+               values=".2;1;.2"
+               dur="2s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="420" cy="280" r="2">
+      <animate attributeName="opacity"
+               values="1;.2;1"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1180" cy="95" r="3">
+      <animate attributeName="opacity"
+               values=".2;1;.2"
+               dur="2.5s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1320" cy="280" r="2">
+      <animate attributeName="opacity"
+               values="1;.2;1"
+               dur="2s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="650" cy="70" r="2">
+      <animate attributeName="opacity"
+               values=".2;1;.2"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </circle>
+
+  </g>
+
+  <!-- Pixel particles -->
+  <g fill="#a855f7">
+
+    <rect x="300" y="190" width="9" height="9">
+      <animateTransform attributeName="transform"
+                        type="translate"
+                        values="0 0;0 -18;0 0"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="1250" y="170" width="8" height="8">
+      <animateTransform attributeName="transform"
+                        type="translate"
+                        values="0 0;0 -15;0 0"
+                        dur="2.5s"
+                        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="1100" y="300" width="7" height="7">
+      <animateTransform attributeName="transform"
+                        type="translate"
+                        values="0 0;0 14;0 0"
+                        dur="3.5s"
+                        repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="480" y="110" width="7" height="7">
+      <animateTransform attributeName="transform"
+                        type="translate"
+                        values="0 0;0 -12;0 0"
+                        dur="2s"
+                        repeatCount="indefinite"/>
+    </rect>
+
+  </g>
+
+  <!-- Logo shadow -->
+  <g class="logo">
+    <text x="800" y="250"
+          text-anchor="middle"
+          font-family="monospace"
+          font-size="190"
+          font-weight="900"
+          letter-spacing="-12"
+          fill="#5827bd"
+          opacity=".9">SUTRA</text>
+
+    <!-- Main wordmark -->
+    <text x="800" y="235"
+          text-anchor="middle"
+          font-family="monospace"
+          font-size="190"
+          font-weight="900"
+          letter-spacing="-12"
+          fill="url(#logoGradient)">SUTRA</text>
+
+    <text x="1180" y="235"
+          font-family="monospace"
+          font-size="145"
+          font-weight="900"
+          letter-spacing="-10"
+          fill="url(#aiGradient)">.ai</text>
+  </g>
+
+  <!-- Animated shimmer -->
+  <g clip-path="url(#logoClip)">
+    <rect x="-300" y="40"
+          width="120" height="240"
+          fill="#ffffff"
+          opacity=".18"
+          transform="skewX(-20)">
+      <animate attributeName="x"
+               from="-300"
+               to="1700"
+               dur="5s"
+               repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Orbital underline -->
+  <path d="M 420 275
+           Q 800 320 1190 275"
+        fill="none"
+        stroke="url(#orbitGradient)"
+        stroke-width="5"
+        stroke-linecap="round"
+        filter="url(#glow)"
+        stroke-dasharray="1100"
+        stroke-dashoffset="1100">
+
+    <animate attributeName="stroke-dashoffset"
+             from="1100"
+             to="0"
+             dur="2.5s"
+             fill="freeze"/>
+  </path>
+
+  <!-- Pixel trail -->
+  <g fill="#a855f7">
+    <rect x="430" y="290" width="12" height="7"/>
+    <rect x="465" y="300" width="8" height="7"/>
+    <rect x="510" y="305" width="13" height="7"/>
+    <rect x="1150" y="294" width="10" height="7"/>
+    <rect x="1190" y="285" width="8" height="7"/>
+  </g>
+
+  <!-- Sparkle -->
+  <g transform="translate(800 75)" fill="#e9caff">
+    <path d="M0 -13 L4 -4 L13 0 L4 4 L0 13 L-4 4 L-13 0 L-4 -4Z">
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0"
+                        to="360"
+                        dur="12s"
+                        repeatCount="indefinite"/>
+    </path>
+  </g>
+
+</svg>
